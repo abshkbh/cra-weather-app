@@ -1,5 +1,6 @@
 import React from 'react';
-import Constants from './Constants';
+import Constants from './Constants.js';
+import Weather from './Weather.js';
 
 // The parent component for the app.
 class App extends React.Component {
@@ -53,7 +54,7 @@ class App extends React.Component {
       // Render the weather information
       return (
         <div className="App">
-          <h1>Weather for {this.state.city}</h1>
+          <Weather city={this.state.city} />
         </div>
       );
     }
