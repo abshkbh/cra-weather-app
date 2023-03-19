@@ -50,14 +50,14 @@ class App extends React.Component {
           </button>
         </div>
       );
-    } else {
-      // Render the weather information
-      return (
-        <div className="App">
-          <Weather city={this.state.city} />
-        </div>
-      );
     }
+
+    // Render the weather information
+    return (
+      <div className="App">
+        <Weather city={this.state.city} />
+      </div>
+    );
   }
 }
 
